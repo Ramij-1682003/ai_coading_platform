@@ -123,14 +123,6 @@ Open `index.html` in browser
 
 ---
 
-## 📸 Demo (Optional)
-
-*Add screenshots here*
-
----
-
-
----
 
 ## ⭐ If you like this project
 
