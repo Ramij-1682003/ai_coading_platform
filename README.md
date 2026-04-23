@@ -129,10 +129,6 @@ Open `index.html` in browser
 
 ---
 
-## 👨‍💻 Author
-
-Your Name
-GitHub: https://github.com/your-username
 
 ---
 
