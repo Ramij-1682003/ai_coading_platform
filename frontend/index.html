@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Coding Interview Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>AI Interview</span>
+            </div>
+            <div class="timer">
+                <i class="fas fa-clock"></i>
+                <span id="timer">45:00</span>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main-content">
+
+            <!-- PROBLEM -->
+            <section class="problem-section">
+                <div class="section-header">
+                    <i class="fas fa-file-code"></i>
+                    <h2>Problem Statement</h2>
+                </div>
+
+                <div class="problem-content">
+                    <h3>Add Two Numbers</h3>
+                    <p>Take two integers as input and print their sum.</p>
+
+                    <div class="example">
+                        <strong>Example:</strong><br>
+                        Input: 2 3<br>
+                        Output: 5
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDITOR -->
+            <section class="editor-section">
+                <div class="section-header">
+                    <i class="fas fa-code"></i>
+                    <h2>Code Editor</h2>
+
+                    <!-- ✅ UPDATED LANGUAGE DROPDOWN -->
+                    <select class="language-select">
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C++</option>
+                        <option value="c">C</option>
+                    </select>
+                </div>
+
+                <div class="editor-container">
+                    <textarea id="code-editor" placeholder="Write your code here..."></textarea>
+                </div>
+
+                <div class="editor-actions">
+                    <button class="btn btn-secondary" id="run-code">
+                        <i class="fas fa-play"></i> Run Code
+                    </button>
+                    <button class="btn btn-primary" id="submit-code">
+                        <i class="fas fa-check"></i> Submit
+                    </button>
+                </div>
+            </section>
+
+            <!-- AI FEEDBACK -->
+            <section class="ai-feedback-section">
+                <div class="section-header">
+                    <i class="fas fa-robot"></i>
+                    <h2>AI Feedback</h2>
+                    <div class="ai-status active">
+                        <i class="fas fa-circle"></i> Active
+                    </div>
+                </div>
+
+                <!-- ✅ DYNAMIC FEEDBACK -->
+                <div class="feedback-content" id="feedback-box">
+                    <p>Run your code to get AI feedback...</p>
+                </div>
+            </section>
+
+            <!-- RESULTS -->
+            <section class="results-section">
+                <div class="section-header">
+                    <i class="fas fa-terminal"></i>
+                    <h2>Execution Results</h2>
+                </div>
+            
+                <!-- ✅ CLEAN OUTPUT AREA -->
+                <div class="results-content">
+                    <div class="output">
+                        <pre id="output-box">Run your code to see results...</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="history-section">
+                <h2>Submission History</h2>
+                <div id="history-box"></div>
+            </section>
+            
+            <!-- SCORE -->
+            <section class="score-section">
+                <div class="section-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Performance Score</h2>
+                </div>
+
+                <div class="score-content">
+                    <div class="score-circle">
+                        <div class="score-value" id="score">--</div>
+                        <div class="score-label">Overall</div>
+                    </div>
+
+                    <div class="score-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Correctness</span>
+                            <div class="metric-bar">
+                                <div class="metric-fill" id="correctness-bar" style="width: 0%"></div>
+                            </div>
+                            <span class="metric-value" id="correctness">0%</span>
+                        </div>
+
+                        <div class="metric">
+                            <span class="metric-label">Efficiency</span>
+                            <div class="metric-bar">
+                                <div class="metric-fill" id="efficiency-bar" style="width: 0%"></div>
+                            </div>
+                            <span class="metric-value" id="efficiency">0%</span>
+                        </div>
+
+                        <div class="metric">
+                            <span class="metric-label">Code Quality</span>
+                            <div class="metric-bar">
+                                <div class="metric-fill" id="quality-bar" style="width: 0%"></div>
+                            </div>
+                            <span class="metric-value" id="quality">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
