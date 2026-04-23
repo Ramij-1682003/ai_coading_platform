@@ -51,7 +51,7 @@ Frontend/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/ai-coding-platform.git
+git clone https://github.com/Ramij-1682003/ai-coding-platform.git
 cd ai-coding-platform
 ```
 
