@@ -122,7 +122,9 @@ Open `index.html` in browser
 * 🧠 Advanced AI feedback (optimized solutions)
 
 ---
-
+## 🌐 Live Demo
+Frontend: https://your-netlify-link.netlify.app  
+Backend: https://ai-coading-platform.onrender.com
 
 ## ⭐ If you like this project
 
